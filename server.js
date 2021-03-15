@@ -106,7 +106,7 @@ router.post("/artists", (req, res) => {
 });
 
 router.put("/artists/:id", (req, res) => {
-  artists.findOne({ id: req.params.id }, function (err, objFromMongoDB) {
+  Artists.findOne({ id: req.params.id }, function (err, objFromMongoDB) {
     if (err)
       return res.json({
         result: false,
