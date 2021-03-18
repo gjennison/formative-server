@@ -7,6 +7,7 @@ var ArtistSchema = new Schema(
     imgURL: String,
     wikipedia: String,
     id: String,
+    artwork: String,
   },
   {
     timestamps: false,
